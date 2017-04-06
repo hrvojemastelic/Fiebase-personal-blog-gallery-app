@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="ADD PICTURE"
+        android:textColor="@android:color/background_light"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/imgselect"
+        android:layout_width="395dp"
+        android:layout_height="206dp"
+        android:layout_weight="0.42"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light_disabled"
+        tools:ignore="ContentDescription,InefficientWeight,ObsoleteLayoutParam" />
+
+    <EditText
+        android:id="@+id/titlefield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="0.07"
+        android:ems="10"
+        android:hint="name.."
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/colorPrimaryDark"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <EditText
+        android:id="@+id/descfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titlefield"
+        android:layout_weight="0.08"
+        android:ems="10"
+        android:hint="desc..."
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descfield"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:background="@android:color/transparent"
+        android:text="POST"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

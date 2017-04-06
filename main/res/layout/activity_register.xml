@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hrvoje.myapplication.RegisterActivity"
+    android:background="@drawable/register">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailfield"
+        android:hint="Email.."
+        tools:ignore="HardcodedText"
+        android:textColorHint="@color/cardview_light_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/namefield"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordfield"
+        android:hint="Password"
+        tools:ignore="HardcodedText"
+        android:textColorLink="?attr/colorBackgroundFloating"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/cardview_light_background"
+        android:layout_below="@+id/emailfield"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/namefield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:hint="Name.."
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/holo_blue_light"
+        android:textColorHint="@android:color/background_light"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="SIGN UP"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorPrimary"
+        tools:ignore="HardcodedText"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Welcome"
+        android:textColor="@android:color/white"
+        android:textSize="24dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="LOG IN"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/signupbtn"
+        android:layout_alignStart="@+id/signupbtn"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New User"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="____"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/textView13"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="____"
+        android:layout_alignBottom="@+id/loginbutton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

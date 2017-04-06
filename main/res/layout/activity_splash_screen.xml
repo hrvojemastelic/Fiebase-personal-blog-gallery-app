@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flower"
+    tools:context="com.example.hrvoje.myapplication.SplashScreen">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="T00xicpanda"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView18"
+        android:layout_marginTop="22dp"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_below="@+id/fantasybtn"
+        android:layout_centerHorizontal="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fantasybtn"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/kristinasplash"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+
+        android:id="@+id/enterr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:text="EnteR"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ArtworkS"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

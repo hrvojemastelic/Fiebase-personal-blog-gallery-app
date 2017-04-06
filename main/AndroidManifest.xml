@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hrvoje.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    ﻿
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/t00xicpanda"
+        android:label="Toxicpanda"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OfflineActivity" />
+        <activity android:name=".FullScreen" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".StartActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".GallerysContainerActivity" />
+        <activity android:name=".SecondGallery.SecondPost" />
+        <activity android:name=".PostActivityChooser" />
+        <activity android:name=".SecondGallery.SecondGallery" />
+        <activity android:name=".third.PhotoGallery" />
+        <activity android:name=".third.PhotoPost" />
+        <activity android:name=".third.FullPhoto" />
+        <activity android:name=".SecondGallery.FullSecond"></activity>
+    </application>
+
+</manifest>

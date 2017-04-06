@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contentstatus"
+    tools:context="com.example.hrvoje.myapplication.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/textViewstatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="188dp"
+        android:hint="Status"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:text="What's New"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/new_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignLeft="@+id/textViewstatus"
+        android:layout_alignStart="@+id/textViewstatus"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Newpost"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText,RtlHardcoded,UnknownId" />
+
+    <Button
+        android:id="@+id/post_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/new_post"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Post"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</RelativeLayout>
