@@ -123,6 +123,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    
+    //START POSTING
     private void startPosting() {
 
 
@@ -134,6 +136,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
+    
+    //ON START
     @Override
                    public void onStart() {
              super.onStart();
